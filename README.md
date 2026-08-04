@@ -10,7 +10,7 @@ This repository ships the **canonical 2D experiment pipeline** from our paper:
 
 > 🎯 Four geometries out of the box: **Circles · Moons · 6 Gaussians · Checkerboard**
 
-![ContinualFlow 2D baseline figure](docs/assets/toy2d_preview.svg)
+![ContinualFlow 2D baseline figure](docs/assets/toy2d_preview.png)
 
 ---
 

@@ -21,4 +21,4 @@ manuscript/
 
 # README preview figure (tracked)
 !docs/assets/
-!docs/assets/*.svg
+!docs/assets/*.png
