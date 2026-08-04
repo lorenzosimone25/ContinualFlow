@@ -1,0 +1,45 @@
+run_name = "icml-small-seed-0"
+seed = 0
+device = "auto"
+datasets = ["circles", "moons", "gaussians", "checkerboard"]
+
+[data]
+n_points = 5000
+noise = 0.005
+normalization_min = -0.8
+normalization_max = 0.8
+
+[classifier]
+hidden_dim = 64
+epochs = 100
+batch_size = 1024
+learning_rate = 0.01
+subsample_size = 5000
+
+[flow]
+hidden_dim = 64
+base_epochs = 2500
+unlearning_epochs = 1000
+batch_size = 1024
+learning_rate = 0.01
+suppression_lambda = 5.0
+
+[sampling]
+n_samples = 5000
+integration_steps = 10
+
+[plot]
+selected_indices = [0, 2, 4, 6, 8, 10]
+trajectory_resolution = 50
+energy_resolution = 300
+kde_max_points = 4000
+kde_bandwidth = 0.3
+quiver_density = 15
+quiver_alpha = 0.3
+x_min = -0.9
+x_max = 0.9
+y_min = -0.9
+y_max = 0.9
+figure_width = 7.0
+figure_height = 8.5
+

@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "continualflow"
+version = "0.1.0"
+description = "Reproducible 2D experiments for energy-reweighted continual flow matching"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Lorenzo Simone" },
+    { name = "Davide Bacciu" },
+    { name = "Shuangge Ma" },
+]
+keywords = [
+    "flow-matching",
+    "machine-unlearning",
+    "continual-learning",
+    "generative-models",
+    "pytorch",
+]
+dependencies = [
+    "matplotlib>=3.8,<4",
+    "numpy>=1.26,<3",
+    "scikit-learn>=1.4,<2",
+    "scipy>=1.12,<2",
+    "seaborn>=0.13,<1",
+    "torch>=2.2",
+    "tqdm>=4.66,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.urls]
+Homepage = "https://openreview.net/forum?id=11uOgdn3nv"
+
+[project.scripts]
+continualflow-2d = "continualflow.experiment_2d:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+

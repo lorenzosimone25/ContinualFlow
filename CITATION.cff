@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: If you use this software, please cite the paper below.
+title: "ContinualFlow: Learning and Unlearning with Neural Flow Matching"
+authors:
+  - family-names: Simone
+    given-names: Lorenzo
+  - family-names: Bacciu
+    given-names: Davide
+  - family-names: Ma
+    given-names: Shuangge
+preferred-citation:
+  type: conference-paper
+  title: "ContinualFlow: Learning and Unlearning with Neural Flow Matching"
+  authors:
+    - family-names: Simone
+      given-names: Lorenzo
+    - family-names: Bacciu
+      given-names: Davide
+    - family-names: Ma
+      given-names: Shuangge
+  year: 2025
+  conference:
+    name: "ICML 2025 Workshop on Machine Unlearning for Generative AI"
+  url: "https://openreview.net/forum?id=11uOgdn3nv"
